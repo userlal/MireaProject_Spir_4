@@ -22,8 +22,8 @@ public class HomeWorker extends Worker {
     public Result doWork() {
         Log.d(TAG, "doWork: start");
         try {
-            Intent serviceIntent = new Intent(HomeWorker.this, HomeService.class);
-            ContextCompat.startForegroundService(HomeWorker.this, serviceIntent);
+            //Intent serviceIntent = new Intent(HomeWorker.this, HomeService.class);
+            //ContextCompat.startForegroundService(HomeWorker.this, serviceIntent);
             TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
