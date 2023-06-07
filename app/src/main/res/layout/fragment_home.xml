@@ -6,6 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="379dp"
+        android:layout_height="242dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:contextClickable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Введите цитату"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/text_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Название файла"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="260dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/sharp_add_black_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_home" />
+
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"

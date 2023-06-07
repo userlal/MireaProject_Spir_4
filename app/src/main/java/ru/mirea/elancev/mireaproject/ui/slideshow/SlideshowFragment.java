@@ -29,7 +29,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import ru.mirea.elancev.mireaproject.databinding.ActivityMainBinding;
 import ru.mirea.elancev.mireaproject.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {

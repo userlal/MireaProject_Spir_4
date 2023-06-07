@@ -16,8 +16,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import ru.mirea.elancev.mireaproject.MainActivity;
-import ru.mirea.elancev.mireaproject.R;
 import ru.mirea.elancev.mireaproject.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment implements SensorEventListener {

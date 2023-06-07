@@ -4,13 +4,11 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Environment;
 import android.util.Log;
@@ -22,10 +20,7 @@ import android.widget.Button;
 import java.io.File;
 import java.io.IOException;
 
-import ru.mirea.elancev.mireaproject.databinding.ActivityMainBinding;
 import ru.mirea.elancev.mireaproject.databinding.FragmentBrowserBinding;
-import ru.mirea.elancev.mireaproject.databinding.FragmentSlideshowBinding;
-import ru.mirea.elancev.mireaproject.ui.slideshow.SlideshowViewModel;
 
 public class BrowserFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";

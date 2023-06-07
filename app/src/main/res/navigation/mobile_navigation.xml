@@ -32,4 +32,14 @@
         android:name="ru.mirea.elancev.mireaproject.DataFragment"
         android:label="nav_fragment"
         tools:layout="@layout/nav_fragment" />
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="ru.mirea.elancev.mireaproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="ru.mirea.elancev.mireaproject.mymap.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
 </navigation>
