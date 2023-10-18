@@ -15,8 +15,11 @@ import androidx.work.WorkManager;
 import androidx.work.WorkRequest;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import ru.mirea.elancev.mireaproject.CryptFile;
+import ru.mirea.elancev.mireaproject.R;
 import ru.mirea.elancev.mireaproject.databinding.FragmentHomeBinding;
 
 import javax.crypto.SecretKey;
@@ -40,6 +43,13 @@ public class HomeFragment extends Fragment {
 
         final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        TextView uidTextView = root.findViewById(R.id.UID4);
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+        if (currentUser != null) {
+            uidTextView.setText(currentUser.getUid());
+        }
 
         WorkRequest uploadWorkRequest =
                 new OneTimeWorkRequest.Builder(HomeWorker.class)
@@ -67,6 +77,4 @@ public class HomeFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
-
 }
