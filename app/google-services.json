@@ -1,65 +1,27 @@
 {
   "project_info": {
-    "project_number": "111897814086",
-    "project_id": "lesson7-94240",
-    "storage_bucket": "lesson7-94240.appspot.com"
+    "project_number": "9403989047",
+    "firebase_url": "https://mireaproject-606f4-default-rtdb.firebaseio.com",
+    "project_id": "mireaproject-606f4",
+    "storage_bucket": "mireaproject-606f4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:111897814086:android:8f84c1f0e40a3331f3d647",
-        "android_client_info": {
-          "package_name": "ru.mirea.elancev.firebaseauth"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "111897814086-rqe5m0ifaaur4n0mlko989a3omtpcgl6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA8FdeAFtCJbh95RcLdbuOY8QyUH06ZAiw"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "111897814086-rqe5m0ifaaur4n0mlko989a3omtpcgl6.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:111897814086:android:219c47467cca929ef3d647",
+        "mobilesdk_app_id": "1:9403989047:android:d557042003680a180353b2",
         "android_client_info": {
           "package_name": "ru.mirea.elancev.mireaproject"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "111897814086-rqe5m0ifaaur4n0mlko989a3omtpcgl6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA8FdeAFtCJbh95RcLdbuOY8QyUH06ZAiw"
+          "current_key": "AIzaSyAkSZr44bkceuhqNr--VIQzIDVWxfrghx8"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "111897814086-rqe5m0ifaaur4n0mlko989a3omtpcgl6.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
