@@ -1,9 +1,11 @@
-package ru.mirea.spiridovich.mireaproject;import android.app.AlertDialog;
+package ru.mirea.spiridovich.mireaproject;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 
@@ -12,6 +14,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.concurrent.TimeUnit;
 
+import androidx.annotation.NonNull;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -70,6 +73,16 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        // Добавляем слушатель для обработки касаний по экрану
+        View contentView = findViewById(android.R.id.content);
+        contentView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                resetIdleTimer(); // Сброс таймера при касании по экрану
+                return false;
+            }
+        });
     }
 
     @Override
@@ -78,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
         // Начать таймер бездействия при запуске
         resetIdleTimer();
     }
-
 
     @Override
     public boolean onSupportNavigateUp() {
