@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'ru.mirea.elancev.mireaproject'
+    namespace 'ru.mirea.spiridovich.mireaproject'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ru.mirea.elancev.mireaproject"
+        applicationId "ru.mirea.spiridovich.mireaproject"
         minSdk 26
         targetSdk 33
         versionCode 1

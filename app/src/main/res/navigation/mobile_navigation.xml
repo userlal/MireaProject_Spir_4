@@ -7,39 +7,39 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="ru.mirea.elancev.mireaproject.ui.home.HomeFragment"
+        android:name="ru.mirea.spiridovich.mireaproject.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="ru.mirea.elancev.mireaproject.ui.gallery.GalleryFragment"
+        android:name="ru.mirea.spiridovich.mireaproject.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="ru.mirea.elancev.mireaproject.ui.slideshow.SlideshowFragment"
+        android:name="ru.mirea.spiridovich.mireaproject.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_browser"
-        android:name="ru.mirea.elancev.mireaproject.BrowserFragment"
+        android:name="ru.mirea.spiridovich.mireaproject.BrowserFragment"
         android:label="fragment_browser"
         tools:layout="@layout/fragment_browser" />
     <fragment
         android:id="@+id/nav_fragment"
-        android:name="ru.mirea.elancev.mireaproject.DataFragment"
+        android:name="ru.mirea.spiridovich.mireaproject.DataFragment"
         android:label="nav_fragment"
         tools:layout="@layout/nav_fragment" />
     <fragment
         android:id="@+id/fragment_profile"
-        android:name="ru.mirea.elancev.mireaproject.ProfileFragment"
+        android:name="ru.mirea.spiridovich.mireaproject.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/fragment_map"
-        android:name="ru.mirea.elancev.mireaproject.mymap.MapFragment"
+        android:name="ru.mirea.spiridovich.mireaproject.mymap.MapFragment"
         android:label="Map"
         tools:layout="@layout/fragment_map" />
 </navigation>
